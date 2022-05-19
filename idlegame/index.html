@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Mining Idle Game</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<div class="menus">
+				<div class="main">
+						<button id="mine">Mine</button>
+					<button id="visit">Open Market</button>
+				<div class="market">
+					<div class="sellButtons">
+						<button id="sell1">Sell [1]</button>
+						<button id="sell10">Sell [10]</button>
+						<button id="sellAll">Sell All</button>
+					</div>
+					<div class="upgrades">
+						<button id="autoSimple">Buy [1] Simple Miner</button>
+					</div>
+					<div>
+						<button id="close">Close</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="inventory">
+				<p id="money">Money: $0</p>
+				<p id="gold">You have 0 gold!</p>
+				<p id="simples"></p>
+			</div>
+		</div>
+	</body>
+</html>
