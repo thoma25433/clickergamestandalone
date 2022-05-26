@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/java.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    alert("Game does not save right now! Be careful!");
+  </script>
+  <title>Idle Miner</title>
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="headerBox">
+      <h1>Idle Miner</h1>
+    </div>
+    <div id="game">
+
+
+      <div id="buttons">
+        <button type="button" name="mine" onclick="add()">Click to Mine</button>
+        <!-- <button name="openshop1">Open Click Shop</button>
+        <button id="openshop2">Open Idle Shop</button> -->
+      </div>
+      <div id="clickshop">
+        <button onclick="buyStone()" class="buyButton">Buy Stone Pickaxe </button>
+        <h5>+1 Gold Per Click | Cost: <span id="stonecost">10</span> | Owned: <span id="stones">0</span></h5>
+        <button onclick="buyIron()" class="buyButton">Buy Iron Pickaxe </button>
+        <h5>+10 Gold Per Click | Cost: <span id="ironcost">100</span> | Owned: <span id="irons">0</span></h5>
+        <button onclick="buyDiamond()" class="buyButton">Buy Diamond Pickaxe</button>
+        <h5>+100 Gold Per Click | Cost: <span id="diamondcost">300</span> | Owned: <span id="diamonds">0</span></h5>
+        <!-- <button name="closeshop1">Close Click Shop</button> -->
+      </div>
+      <div id="idleshop">
+        <button onclick="buyBasic()" class="buyButton">Buy Basic Worker</button>
+        <h5>+1 Gold Per Second | Cost: <span id="basicprice">20</span> | Owned: <span id="basicnum">0</span></h5>
+        <button onclick="buyBetter()" class="buyButton">Buy Better Worker</button>
+        <h5>+10 Gold Per Second | Cost: <span id="betterprice">100</span> | Owned: <span id="betternum">0</span></h5>
+        <button onclick="buyAdvanced()" class="buyButton">Buy Advanced Worker</button>
+        <h5>+100 Gold Per Second | Cost: <span id="advancedprice">600</span> | Owned: <span id="advancednum">0</span></h5>
+        <!-- <button name="closeshop2">Close Idle Shop</button> -->
+      </div>
+      <div id="inv">
+        <p id="gold">Gold : <span id="showGold">0</span></p>
+        <p id="gps">Gold Per Second : <span id="showpsec">0</span></p>
+        <p id="gpc">Gold Per Click : <span id="showpclick">1</span></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
